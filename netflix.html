@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:black;
+}
+.banner{
+    width:100%;
+    height:700px;
+    background-image:url("background.jpg");
+    background-size:cover;
+    background-position:center;
+}
+nav{
+    width:100%;
+    height:80px;
+    padding:20px 70px;
+}
+.logo{
+    float:left;
+}
+.logo img{
+    width:170px;
+}
+.menu{
+    float:right;
+}
+.menu select{
+    width:120px;
+    height:40px;
+    background:black;
+    color:white;
+    border:1px solid white;
+    border-radius:5px;
+}
+.menu button{
+    width:90px;
+    height:40px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    margin-left:10px;
+    font-size:16px;
+}
+.hero{
+    width:900px;
+    margin:auto;
+    text-align:center;
+    color:white;
+    margin-top:150px;
+}
+.hero h1{
+    font-size:60px;
+}
+.hero h3{
+    margin-top:20px;
+    font-size:28px;
+}
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+}
+.hero input{
+    width:420px;
+    height:60px;
+    margin-top:30px;
+    padding-left:15px;
+    font-size:18px;
+    border:none;
+}
+.hero button{
+    width:220px;
+    height:60px;
+    background:red;
+    color:white;
+    border:none;
+    font-size:24px;
+}
+.trending{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+}
+.trending h1{
+    color:white;
+    margin-bottom:20px;
+}
+.movie{
+    width:180px;
+    height:250px;
+    display:inline-block;
+    margin-right:25px;
+    position:relative;
+}
+.movie img{
+    width:180px;
+    height:250px;
+    border-radius:10px;
+}
+.number{
+    position:absolute;
+    left:-20px;
+    bottom:-10px;
+    font-size:90px;
+    font-weight:bold;
+    color:black;
+    -webkit-text-stroke:2px white;
+}
+.movie:hover{
+    transform:scale(1.08);
+    transition:0.5s;
+    cursor:pointer;
+}
+.reason{
+    width:90%;
+    margin:auto;
+    margin-top:70px;
+}
+.reason h1{
+    color:white;
+    margin-bottom:20px;
+}
+.box{
+    width:280px;
+    height:280px;
+    display:inline-block;
+    background:linear-gradient(#1d2148,#251426);
+    border-radius:20px;
+    margin-right:15px;
+    padding:20px;
+    vertical-align:top;
+}
+.box h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.box p{
+    color:#cfcfcf;
+    line-height:30px;
+}
+
+.icon{
+    font-size:60px;
+    float:right;
+    margin-top:60px;
+}
+.line{
+    width:100%;
+    height:8px;
+    background:#333;
+}
+</style>
+</head>
+<body>
+<div class="banner">
+<nav>
+<div class="logo">
+<img src="./Screenshot 2026-06-26 200350.png">
+</div>
+<div class="menu">
+<select>
+<option>English</option>
+<option>Hindi</option>
+</select>
+<button>Sign In</button>
+</div>
+</nav>
+<div class="hero">
+<h1>Unlimited movies,<br>TV shows and more</h1>
+<h3>Starts at ₹149. Cancel at any time.</h3>
+<p>Ready to watch? Enter your email to create or restart your membership.</p>
+<input type="email" placeholder="Email address">
+<button>Get Started ></button>
+</div>
+</div>
+<div class="trending">
+<h1>Trending Now</h1>
+<div class="movie">
+<span class="number">1</span>
+<img src="./images (1).jpg">
+</div>
+<div class="movie">
+<span class="number">2</span>
+<img src="./images.jpg">
+</div>
+<div class="movie">
+<span class="number">3</span>
+<img src="./images (2).jpg">
+</div>
+<div class="movie">
+<span class="number">4</span>
+<img src="./images (3).jpg">
+</div>
+<div class="movie">
+<span class="number">5</span>
+<img src="./images (4).jpg">
+</div>
+<div class="movie">
+<span class="number">6</span>
+<img src="./dulquer-salmaan-mrunal-thakur-in-sita-ramam-337.jpg">
+</div>
+</div>
+<div class="reason">
+<h1>More Reasons to Join</h1>
+<div class="box">
+<h2>Enjoy on your TV</h2>
+<p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV and more.</p>
+<div class="icon">📺</div>
+</div>
+<div class="box">
+<h2>Download your shows to watch offline</h2>
+<p>Save your favourites easily and always have something to watch.</p>
+<div class="icon">⬇️</div>
+</div>
+<div class="box">
+<h2>Watch everywhere</h2>
+<p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+<div class="icon">🎬</div>
+</div>
+<div class="box">
+<h2>Create profiles for kids</h2>
+<p>Send kids on adventures with their favourite characters in a space made just for them.</p>
+<div class="icon">😊</div>
+</div>
+</div>
+<div class="line"></div>
+</body>
+</html>
